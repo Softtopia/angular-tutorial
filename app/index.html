@@ -40,7 +40,7 @@
           <h2>{{ul.selected.name}}</h2>
           <p>{{ul.selected.content}}</p>
           <div ng-include="ul.selected.content_html"></div>
-          <md-button class="share" md-no-ink ng-click="ul.share($event)" aria-label="Share">
+          <md-button ng-show="ul.selected.links" class="share" md-no-ink ng-click="ul.share($event)" aria-label="Share">
             <md-icon md-svg-icon="share"></md-icon>
           </md-button>
         </md-content>

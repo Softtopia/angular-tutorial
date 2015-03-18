@@ -1,9 +1,9 @@
 <div class="tabsdemoStaticTabs sample">
     <md-tabs class="md-accent" md-selected="ul.data.selectedIndex">
-        <md-tab id="tab1" aria-controls="tab1-content">
+        <md-tab  id="tab1" aria-controls="tab1-content">
             JS
         </md-tab>
-        <md-tab id="tab2" aria-controls="tab2-content">
+        <md-tab  id="tab2" aria-controls="tab2-content">
             HTML
         </md-tab>
         <md-tab id="tab3" aria-controls="tab3-content">
@@ -27,8 +27,7 @@
              ng-switch-when="1"
              md-swipe-left="ul.next()"
              md-swipe-right="ul.previous()">
-            View for {{data.secondLabel}}<br/>
-            data.selectedIndex = 1
+            <div class="code-highlight" hljs include="ul.selected.code.html"></div>
         </div>
         <div role="tabpanel"
              id="tab3-content"
@@ -36,8 +35,7 @@
              ng-switch-when="2"
              md-swipe-left="ul.next()"
              md-swipe-right="ul.previous()">
-            View for Item #3<br/>
-            data.selectedIndex = 2
+            <div class="code-highlight" hljs include="ul.selected.code.css"></div>
         </div>
     </ng-switch>
 </div>
