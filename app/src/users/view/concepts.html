@@ -1,0 +1,40 @@
+<div class="tabsConcept">
+
+    <md-tabs class="md-accent" md-selected="ul.data.selectedConceptIndex">
+        <md-tab id="tab1" >
+            1-.Templates
+        </md-tab>
+        <md-tab id="tab2" >
+            2-.Directives
+        </md-tab>
+        <md-tab id="tab3" >
+            3-.Scope
+        </md-tab>
+        <md-tab id="tab4" >
+            4-.Filters
+        </md-tab>
+    </md-tabs>
+
+    <ng-switch on="ul.data.selectedConceptIndex" class="tabpanel-container">
+        <div role="tabpanel"
+             aria-labelledby="tab1"
+             ng-switch-when="0"
+             md-swipe-left="ul.next()"
+             md-swipe-right="ul.previous()">
+            <div ng-include="'/src/concepts/templates.html'"></div>
+        </div>
+        <div role="tabpanel"
+             aria-labelledby="tab2"
+             ng-switch-when="1"
+             md-swipe-left="ul.next()"
+             md-swipe-right="ul.previous()">
+        </div>
+        <div role="tabpanel"
+             aria-labelledby="tab3"
+             ng-switch-when="2"
+             md-swipe-left="ul.next()"
+             md-swipe-right="ul.previous()">
+        </div>
+    </ng-switch>
+
+</div>

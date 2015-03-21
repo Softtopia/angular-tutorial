@@ -22,18 +22,17 @@
                 links: [{name: 'AngularJS web site', icon: 'angular', url: 'http://www.angularjs.org'}]
             },
             {
-                name: 'Templates',
+                name: 'The Concepts',
                 avatar: 'add_box',
-                content: 'Compiled at client side, Expressions, Data Binding, it brings us to directives:.',
-                content_html: '/src/users/view/templates.html',
+                content_html: '/src/users/view/concepts.html',
                 code: {html: '/src/samples/templateSample.html'}
             },
             {
-                name: 'Directives',
+                name: 'Sample App',
                 avatar: 'add_box',
                 content: "The way we write.",
                 content_html: '/src/users/view/directives.html',
-                code: {javascript: '/src/users/UserController.js'}
+                code: {javascript: '/src/samples/sampleApp.js', html: '/src/samples/sampleApp.html', src: '/src/samples/sampleApp.html'}
             },
             {
                 name: 'Scope',

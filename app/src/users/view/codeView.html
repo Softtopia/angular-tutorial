@@ -9,6 +9,9 @@
         <md-tab id="tab3" aria-controls="tab3-content">
             CSS
         </md-tab>
+        <md-tab id="tab4" aria-controls="tab4-content">
+            PREVIEW
+        </md-tab>
     </md-tabs>
 
 
@@ -36,6 +39,14 @@
              md-swipe-left="ul.next()"
              md-swipe-right="ul.previous()">
             <div class="code-highlight" hljs include="ul.selected.code.css"></div>
+        </div>
+        <div role="tabpanel"
+             id="tab4-content"
+             aria-labelledby="tab4"
+             ng-switch-when="3"
+             md-swipe-left="ul.next()"
+             md-swipe-right="ul.previous()">
+            <iframe width="100%" height="300" src="{{ul.selected.code.src}}" frameborder="0"></iframe>
         </div>
     </ng-switch>
 </div>
