@@ -35,6 +35,14 @@
              ng-switch-when="2"
              md-swipe-left="ul.next()"
              md-swipe-right="ul.previous()">
+            <div ng-include="'/src/concepts/scopes.html'"></div>
+        </div>
+        <div role="tabpanel"
+             aria-labelledby="tab4"
+             ng-switch-when="3"
+             md-swipe-left="ul.next()"
+             md-swipe-right="ul.previous()">
+            <div ng-include="'/src/concepts/filters.html'"></div>
         </div>
     </ng-switch>
 
