@@ -1,19 +1,20 @@
-/**
- * Created by jordi on 21/03/15.
- */
-(function(angular) {
-    'use strict';
-    var myApp = angular.module('spicyApp1', []);
+'use strict';
+var myApp = angular.module('spicyApp1', []);
 
-    myApp.controller('SpicyController', ['$scope', function($scope) {
-        $scope.spice = 'very';
+myApp.controller('SpicyController', ['$scope', function($scope) {
+    $scope.comments = [];
+    $scope.comment = "";
 
-        $scope.chiliSpicy = function() {
-            $scope.spice = 'chili';
-        };
+    $scope.addComment = function() {
+        $scope.comments.push({ text: $scope.comment, likes : 0 });
+        $scope.comment = "";
+    };
+    $scope.like = function(item) {
+        item.likes ++;
+    }
 
-        $scope.jalapenoSpicy = function() {
-            $scope.spice = 'jalapeño';
-        };
-    }]);
-})(window.angular);
+    $scope.removeComment = function(item) {
+        var index = $scope.comments.indexOf(item);
+        $scope.comments.splice(index);
+    }
+}]);

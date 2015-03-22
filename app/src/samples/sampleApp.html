@@ -4,12 +4,23 @@
         <meta charset="UTF-8">
         <title>Softtopia Angular Tutorial Sample App</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="sampleApp.css">
     </head>
     <body ng-app="spicyApp1">
         <div ng-controller="SpicyController">
-            <button class="btn" ng-click="chiliSpicy()">Chili</button>
-            <button class="btn btn-primary" ng-click="jalapenoSpicy()">Jalapeño</button>
-            <p>The food is {{spice}} spicy!</p>
+            <form>
+                <input type="text" class="form-control" ng-model="comment">
+                <button class="btn btn-success pull-right" ng-click="addComment()" ng-disabled="!comment">Post Comment</button>
+            </form>
+            <ul class="list-group comment-list">
+                <li class="list-group-item" ng-repeat="item in comments">
+                    <button class="btn btn-primary">
+                        <span class="glyphicon glyphicon-thumbs-up" ng-click="like(item)"><small> {{item.likes}}</small></span>
+                    </button>
+                    {{item.text}}
+                    <a class="btn btn-link pull-right" ng-click="removeComment(item)">x</a>
+                </li>
+            </ul>
         </div>
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.5/angular.min.js"></script>
         <script src="/src/samples/sampleApp.js"></script>

@@ -1,0 +1,22 @@
+<h4>Directives, the HTML extension .</h4>
+<md-content class="md-padding" style="height: 600px;padding: 24px;">
+    A directive allows you to extend the HTML vocabulary in a declarative fashion.
+    A directive is a behavior or DOM transformation witch is triggered by the presence of a:
+    <ul>
+        <li>Custom attribute</li>
+        <li>Element name</li>
+        <li>Class Name</li>
+        <li>Comments</li>
+    </ul>
+    <div class="code-highlighted" hljs >
+<my-dir></my-dir>
+<span my-dir="exp"></span>
+<!-- directive: my-dir exp -->
+<span class="my-dir: exp;"></span>
+    </div>
+    Angular compiler is who determines when to use a given directive.
+    For example, the following forms are all equivalent and match the ngBind directive:
+    <div class="code-highlighted" hljs include="'/src/samples/directiveSample.html'"></div>
+
+
+</md-content>

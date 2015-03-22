@@ -25,34 +25,33 @@
                 name: 'The Concepts',
                 avatar: 'add_box',
                 content_html: '/src/users/view/concepts.html',
-                code: {html: '/src/samples/templateSample.html'}
             },
             {
                 name: 'Sample App',
                 avatar: 'add_box',
-                content: "The way we write.",
-                content_html: '/src/users/view/directives.html',
-                code: {javascript: '/src/samples/sampleApp.js', html: '/src/samples/sampleApp.html', src: '/src/samples/sampleApp.html'}
+                content: "Here we have a simple app, let's take a look at it's code.",
+                content_html: '/src/users/view/sampleApp.html',
+                code: {javascript: '/src/samples/sampleApp.js', html: '/src/samples/sampleApp.html', css: '/src/samples/sampleApp.css', src: '/src/samples/sampleApp.html'}
             },
             {
-                name: 'Scope',
+                name: 'Reuse with Style',
                 avatar: 'add_box',
-                content: 'Where the model is.'
+                content: 'Controllers, Factories, Services, Modules, Dependency Injection'
             },
             {
-                name: 'Filters',
+                name: 'The server data',
                 avatar: 'add_box',
-                content: 'Webtwo ipsum dolor sit amet, eskobo chumby doostang bebo. Bubbli greplin stypi prezi mzinga heroku wakoopa, shopify airbnb dogster dopplr gooru jumo, reddit plickers edmodo stypi zillow etsy.'
+                content: "So, how to get Server Data ?."
             },
             {
-                name: 'Reuse with style',
+                name: 'The App anatomy',
                 avatar: 'add_box',
-                content: "Modules, Services, Dependency Injection."
+                content: "Bootstrapping, Configuring and Routing"
             },
             {
-                name: 'Go deeper',
+                name: 'Test',
                 avatar: 'add_box',
-                content: "References, slides, courses..."
+                content: "Testing is easy with Angular"
             }
         ];
 

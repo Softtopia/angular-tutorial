@@ -15,12 +15,13 @@
   </head>
 
   <body ng-app="starterApp" layout="column" ng-controller="UserController as ul">
-
     <md-toolbar layout="row">
-      <md-button class="menu" hide-gt-sm ng-click="ul.toggleList()" aria-label="Show User List">
+        <h2 class="md-toolbar-tools">
+            <span><md-icon md-svg-icon="angular_big" style="width:64px; height:64px;"></md-icon>An Angular introduction</span>
+        </h2>
+        <md-button class="menu" hide-gt-sm ng-click="ul.toggleList()" aria-label="Show User List">
         <md-icon md-svg-icon="menu" ></md-icon>
       </md-button>
-      <h1>An Angular introduction</h1>
     </md-toolbar>
 
     <div flex layout="row">
@@ -56,8 +57,8 @@
 
     <script src="http://pc035860.github.io/angular-highlightjs/angular-highlightjs.js"></script>
     <script src="./src/users/Users.js"></script>
-    <script src="./src/users/UserController.js"></script>
-    <script src="./src/users/UserService.js"></script>
+    <script src="src/users/MainController.js"></script>
+    <script src="src/users/ContentService.js"></script>
 
     <script type="text/javascript">
 
