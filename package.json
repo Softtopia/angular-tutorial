@@ -5,6 +5,9 @@
   "description": "A starter project for AngularJS Material",
   "repository": "https://github.com/angular/material-start",
   "license": "MIT",
+  "engines" : {
+	"npm" : "2.1.x"
+   }, 
   "devDependencies": {
     "karma": "~0.10",
     "protractor": "^1.1.1",
@@ -15,7 +18,7 @@
     "statik": "~1.2.5"    
   },
   "scripts": {
-    "postinstall": "./node_modules/bower/bin/bower install",
+    "postinstall": "bower install",
     "prestart": "npm update"
   }
 }
