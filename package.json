@@ -18,7 +18,7 @@
     "statik": "~1.2.5"    
   },
   "scripts": {
-    "postinstall": "bower install",
+//    "postinstall": "bower install",
     "prestart": "npm update"
   }
 }
